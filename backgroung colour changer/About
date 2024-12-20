@@ -1,0 +1,22 @@
+This is a simple web-based tool that allows users to change the background color of the page and a circle element by clicking 
+different color buttons. The first click changes the outer background, and the second click changes the color of the circle
+
+Features: 
+Color Changing: Choose from 4 color options (Orange, Green, Yellow, Red) to change the background color.
+Interactive: The color of the circle and the background are independently changeable with two clicks.
+Responsive Design: The layout is designed to look good on both desktop and mobile devices.
+
+Files :
+index.html: The main HTML file containing the structure of the page.
+style.css: The CSS file for styling the layout and buttons.
+script.js: The JavaScript file handling the click events for changing the background and circle colors.
+
+How It Works :
+The page contains several buttons representing different colors: Orange, Green, Yellow, and Red.
+When the user clicks a color button for the first time, it changes the background color of the page.
+The second click on the same button changes the background color of the circular div
+
+Technologies Used
+HTML: For the structure of the webpage.
+CSS: For styling the page and the layout.
+JavaScript: For the interactive functionality of the color change.
