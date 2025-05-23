@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #333;
     display: flex;
     justify-content: center;
@@ -12,75 +12,92 @@ body {
 
 .container {
     text-align: center;
-    background-color: rgb(82, 214, 113);
-    padding: 20px;
-    border: solid black 2px;
-    border-radius: 15%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 400px;
+    backdrop-filter: blur(5px);
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .description {
-    font-size: 1em;
-    margin-bottom: 20px;
-    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #666;
 }
 
 .input-section {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 #guessInput {
-    padding: 10px;
-    width: calc(100% - 110px);
+    padding: 12px;
+    flex-grow: 1;
     margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
     font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#guessInput:focus {
+    outline: none;
+    border-color: #6e8efb;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.3);
 }
 
 #submitGuess {
-    padding: 10px;
-    background-color: #3c3f42;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #6e8efb, #a777e3);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1em;
-    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #submitGuess:hover {
-    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(110, 142, 251, 0.4);
 }
 
 .info-section p {
     margin: 10px 0;
-    font-size: 1em;
+    font-size: 1.1em;
+    color: #555;
 }
 
 .feedback {
     font-weight: bold;
-    color: #ff4500;
+    color: #ff6b6b;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .restart {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #28a745;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .restart:hover {
-    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 154, 158, 0.4);
 }
